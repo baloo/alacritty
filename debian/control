@@ -1,0 +1,13 @@
+Source: alacritty
+Section: misc
+Priority: optional
+Maintainer: Arthur Gautier <baloo@superbaloo.net>
+Build-Depends: debhelper (>= 9), cargo, llvm-dev, libclang-dev, clang, cmake, pkg-config, libfontconfig1-dev
+Standards-Version: 3.9.8
+Homepage: https://github.com/jwilm/alacritty
+
+Package: alacritty
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: wayland terminal emulator
+ A simple wayland terminal emulator
